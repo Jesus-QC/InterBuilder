@@ -69,7 +69,7 @@ public class AppDownloader {
         HashSet<String> downloadedFiles = new HashSet<>();
 
         Path temp = Files.createTempDirectory("IBuilder");
-        Path download = Files.createDirectory(Path.of(temp.toAbsolutePath().toString(), "com.intercord"));
+        Path download = Files.createDirectory(Path.of(temp.toAbsolutePath().toString(), "com_intercord"));
 
         for (File file : filesToDownload) {
             String name = file.getName();
